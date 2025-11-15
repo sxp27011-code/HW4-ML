@@ -19,6 +19,9 @@ token.is_alpha Ensures only alphabetic tokens are kept. Removes numbers, punctua
 token.text.lower() not in stop_words Removes common stopwords. Example removed words: while, in, the
 token.pos_ in ["NOUN", "VERB"] Keeps only meaningful content words: NOUN → football, books, library VERB → enjoys, playing, reading, loves This helps focus on words that carry semantic meaning.
 Collected Output For each remaining token, the script stores: (original word, lemma, part of speech)
+
+
+
 Q2) This script performs two main NLP tasks using spaCy: Named Entity Recognition (NER) – detects people, organizations, locations, products, etc. Pronoun Ambiguity Detection – checks whether pronouns like he, him, she, they could cause confusion when multiple people appear in the text. Below is a step-by-step explanation of what each part of the script does.
 
 import spacy (spaCy is the NLP library used for: tokenization Named Entity Recognition (NER) part-of-speech tagging pronoun detection)
